@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estate Administration Puzzle</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .piece {
+      width: 100%;
+      height: 100%;
+    }
+
+    .text-container {
+      padding: 30px;
+      color: white;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    .white {
+      background: white;
+      color: #111;
+    }
+
+    .red {
+      background: #ef3125;
+      color: white;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    foreignObject {
+      width: 100%;
+      height: 100%;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+
+    <!-- Top Left (White) -->
+    <svg class="piece white" viewBox="0 0 300 300" preserveAspectRatio="none">
+      <defs>
+        <clipPath id="clip-a">
+          <path d="M0,0 h300 v300 h-300 z
+                   M0,0 a40,40 0 0,1 40,40 a40,40 0 0,1 -40,40" />
+        </clipPath>
+      </defs>
+      <rect width="100%" height="100%" fill="white" clip-path="url(#clip-a)" />
+      <foreignObject clip-path="url(#clip-a)">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="text-container white content">
+          <h3>What is Estate Administration?</h3>
+          <p>Having a Will does not mean that everything is automatically taken care of when someone passes away. Even if a Will exists and names an executor, that person does not have immediate authority to access bank accounts, sell property, or distribute assets. In South Australia, before any estate can be lawfully administered, a formal legal process must be followed.</p>
+        </div>
+      </foreignObject>
+    </svg>
+
+    <!-- Top Right (Red) -->
+    <svg class="piece red" viewBox="0 0 300 300" preserveAspectRatio="none">
+      <defs>
+        <clipPath id="clip-b">
+          <path d="M0,0 h300 v300 h-300 z
+                   M300,0 a40,40 0 0,0 -40,40 a40,40 0 0,0 40,40" />
+        </clipPath>
+      </defs>
+      <rect width="100%" height="100%" fill="#ef3125" clip-path="url(#clip-b)" />
+      <foreignObject clip-path="url(#clip-b)">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="text-container red content">
+          <h3>What does the process involve?</h3>
+          <p>This process is known as estate administration. It involves identifying the deceased’s assets and liabilities, settling any outstanding debts and taxes, and distributing what remains to beneficiaries. Depending on the circumstances, it may require applying to the Supreme Court for a Grant of Probate (if there is a valid will) or Letters of Administration (if there is no will or no eligible executor).</p>
+        </div>
+      </foreignObject>
+    </svg>
+
+    <!-- Bottom Left (Red) -->
+    <svg class="piece red" viewBox="0 0 300 300" preserveAspectRatio="none">
+      <defs>
+        <clipPath id="clip-c">
+          <path d="M0,0 h300 v300 h-300 z
+                   M0,300 a40,40 0 0,0 40,-40 a40,40 0 0,0 -40,-40" />
+        </clipPath>
+      </defs>
+      <rect width="100%" height="100%" fill="#ef3125" clip-path="url(#clip-c)" />
+      <foreignObject clip-path="url(#clip-c)">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="text-container red content">
+          <h3>Why can this process be complex?</h3>
+          <p>While this process may sound straightforward, in practice it can be complex. Depending on the complexity of the estate, the number of beneficiaries involved, or the clarity of the Will, the process can take months and often involves substantial paperwork, legal documentation, and communication with the Court and asset holders. Executors and administrators must navigate legal obligations, manage financial matters, meet Court requirements, and act in accordance with strict timeframes. This is where professional legal support becomes essential.</p>
+        </div>
+      </foreignObject>
+    </svg>
+
+    <!-- Bottom Right (White) -->
+    <svg class="piece white" viewBox="0 0 300 300" preserveAspectRatio="none">
+      <defs>
+        <clipPath id="clip-d">
+          <path d="M0,0 h300 v300 h-300 z
+                   M300,300 a40,40 0 0,1 -40,-40 a40,40 0 0,1 40,-40" />
+        </clipPath>
+      </defs>
+      <rect width="100%" height="100%" fill="white" clip-path="url(#clip-d)" />
+      <foreignObject clip-path="url(#clip-d)">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="text-container white content">
+          <h3>How we can help</h3>
+          <p>At Grope Hamilton Lawyers, we assist clients through every stage of estate administration from determining whether a grant is needed, to preparing and lodging Court documents, responding to requests from banks or institutions, and ensuring assets are distributed properly and lawfully. Whether you’re an executor named in a will or a family member needing to apply for administration, our experienced wills and estates team can guide you manage the process with clarity and confidence.</p>
+        </div>
+      </foreignObject>
+    </svg>
+
+  </div>
+</body>
+</html>
